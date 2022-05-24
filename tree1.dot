@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=" Persistent EPS in the Last Four Seasons <= 0.211\nentropy = 0.483\nsamples = 6819\nvalue = [6599, 770]\nclass = No", fillcolor="#e89050"] ;
+1 [label=" Total debt/Total net worth <= 0.011\nentropy = 0.929\nsamples = 1355\nvalue = [1178.0, 619.5]\nclass = No", fillcolor="#f3c3a1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=" Net Income to Stockholder's Equity <= 0.836\nentropy = 0.57\nsamples = 915\nvalue = [876.0, 136.5]\nclass = No", fillcolor="#e99558"] ;
+1 -> 2 ;
+3 [label="entropy = 0.952\nsamples = 173\nvalue = [148.0, 87.5]\nclass = No", fillcolor="#f4cbae"] ;
+2 -> 3 ;
+4 [label="entropy = 0.339\nsamples = 742\nvalue = [728, 49]\nclass = No", fillcolor="#e78946"] ;
+2 -> 4 ;
+5 [label=" Quick Ratio <= 0.005\nentropy = 0.961\nsamples = 440\nvalue = [302, 483]\nclass = Bankruptcy", fillcolor="#b5daf5"] ;
+1 -> 5 ;
+6 [label="entropy = 0.902\nsamples = 334\nvalue = [207.0, 444.5]\nclass = Bankruptcy", fillcolor="#95cbf1"] ;
+5 -> 6 ;
+7 [label="entropy = 0.867\nsamples = 106\nvalue = [95.0, 38.5]\nclass = No", fillcolor="#f0b489"] ;
+5 -> 7 ;
+8 [label=" Interest Expense Ratio <= 0.632\nentropy = 0.179\nsamples = 5464\nvalue = [5421.0, 150.5]\nclass = No", fillcolor="#e6843e"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=" Current Liability to Equity <= 0.334\nentropy = 0.037\nsamples = 4471\nvalue = [4466.0, 17.5]\nclass = No", fillcolor="#e5813a"] ;
+8 -> 9 ;
+10 [label="entropy = 0.01\nsamples = 4036\nvalue = [4035.0, 3.5]\nclass = No", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="entropy = 0.202\nsamples = 435\nvalue = [431, 14]\nclass = No", fillcolor="#e6853f"] ;
+9 -> 11 ;
+12 [label=" Cash/Total Assets <= 0.012\nentropy = 0.536\nsamples = 993\nvalue = [955, 133]\nclass = No", fillcolor="#e99355"] ;
+8 -> 12 ;
+13 [label="entropy = 0.934\nsamples = 150\nvalue = [130, 70]\nclass = No", fillcolor="#f3c5a4"] ;
+12 -> 13 ;
+14 [label="entropy = 0.369\nsamples = 843\nvalue = [825, 63]\nclass = No", fillcolor="#e78b48"] ;
+12 -> 14 ;
+}
